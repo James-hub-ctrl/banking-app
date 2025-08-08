@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+.container{
+
+    max-width: 900px;
+    height:500px;
+    min-height: 500px;
+    min-width: 400px;
+    margin-inline: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:row-reverse;
+    align-content: space-evenly;
+
+
+
+
+}
+
+.box{
+height:90px;
+background-color: black;
+color:white;
+font-size:0.6rem;
+padding:0.5rem;
+display:flex;
+align-items: center;
+flex-basis: 190px;
+flex-grow:1;
+flex-shrink: 1;
+flex:1 1 150px;
+
+
+
+
+}
+
+.e{
+flex-grow: 1;
+flex:6 6 150px;
+flex-basis: 121px;
+
+
+
+}
+
+</style>
+
+</head>
+<body>
+    <main class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box e">6</div>
+</main>
+</body>
+</html>

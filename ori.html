@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+padding:0;
+box-sizing: border-box;
+
+        }
+       /* || VARIABLES*/
+       :root{
+       /* FONT*/
+        --FF:"Nunito", sans-serif;
+        --FS-SM:clamp(1.75rem,3vh,2.25rem);
+        --FS-XL:3rem;
+/* COLOR*/
+    --BGCOLOR:#475569;
+    --ALT-BGCOLOR:#1E2938;
+    --RADIAL-COLOR:WHITESMOKE;
+    --LIGHT-COLOR:WHITESMOKE;
+    --DARK-COLOR:#000;
+
+
+    /*SQUARE*/
+    --SQUARE-BGCOLOR:papayawhip;
+    --SQUARE-SIZE:max(150px,20vw);
+
+
+
+   /* GENERAL*/
+   --PADDING: 0.5em;
+  --BORDERS: 2px solid (var--DARK-COLOR);
+  --SHADOWS:0 6px 5px -5px (var--DARK-COLOR);
+
+       }
+
+    
+           
+@media (prefers-color-scheme:light){
+    
+}
+
+        :root{
+            --BGCOLOR:#000;
+            --ALT-BGCOLOR:#333;
+            --RADIAL-COLOR:rgba(128, 128, 128, 0);
+            --SQUARE-BGCOLOR:rgba(128, 0, 128, 0.573);
+        }
+       
+
+body{
+    font:var(--FS) var(--FF);
+    min-height: 100vh;
+background-color: var(--BGCOLOR);
+background-image: radial-gradient(var
+(--RADIAL-COLOR ),var (--BGCOLOR));
+display:flex;
+flex-direction: column;
+
+}
+
+header, nav, footer {
+ 
+    display:grid;
+    place-content:center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header, footer{
+    position:sticky;
+    background-color:var(--ALT-BGCOLOR);
+    color:var(--LIGHT-COLOR);
+    
+    text-align: center;
+
+
+
+}
+
+
+header{
+
+    top:0;
+
+}
+
+main{
+    flex-grow: 1;
+    grid-template-rows:repeat(4,minimax(100px,300px));
+    /*
+    display: flex;
+    flex-flow:row wrap;
+    place-content:center;*/
+    display:grid;
+    /*justify-content: flex-start;*/
+    gap:min(2vw,20px);
+    padding: var(--PADDING);
+
+}
+main section{
+    flex-grow:1;
+    padding:var(--PADDING);
+
+}
+main aside{
+
+    background-color: hsla(0,0%,20%,0,8);
+    color:var(--LIGHT-COLOR);
+    font-size:var(--FS-SM);
+    font-style: italic;
+    padding: var(--PADDING);
+}
+
+
+nav{
+
+    background-color: whitesmoke;
+    color:var(--DARK-COLOR);
+    border-bottom: var(--BORDERS);
+    box-shadow: 0 6px 5px -5px var(--DARK-COLOR);
+}
+
+footer{
+
+    bottom:0;
+}
+a:any-link{
+
+    color:firebrick;
+
+}
+a:hover,a:focus{
+
+    filter: brightness(150%);
+}
+
+/*||FEATURES*/
+
+.square--highlight{
+
+   --SQUARE-BGCOLOR:cornflowerblue;
+
+
+}
+
+
+
+.square{
+  background-color:var(--SQUARE-BGCOLOR);
+  /*width: var(--SQUARE-SIZE);
+  height: var(--SQUARE-SIZE);*/
+  border: var(--BORDERS);
+  border-radius: 15px;
+  display:grid;
+  place-content: center;
+  font-size: var(--FS-XL);
+ box-shadow:var(--SHADOWS);
+
+
+
+}
+
+
+.content{
+
+    margin-top: 20px;
+}
+.tooltip{
+
+    border-bottom: 1px dashed orange;
+    position:relative;
+}
+
+.tooltip:hover::before{
+
+content:attr(data-tooltip);
+position:absolute;
+top:-20px;
+white-space:nowrap;
+background-color: var(--DARK-COLOR);
+padding: var(--PADDING);
+border-radius: 15px;
+}
+
+
+aside{
+box-sizing: border-box;
+display:grid;
+background-color: #475569;
+
+}
+ 
+@media screen and (min-width:176px){
+main{
+flex-flow:row nowrap;
+justify-content: space-between;
+
+
+}
+main section{
+    
+    width: calc(70% - 5px);
+}
+main aside{
+
+    width: calc(30% - 5px);
+}
+}
+
+/* Small*/
+@media  screen and  (min-width:576px) {
+    body{
+
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke,gold);
+    }
+
+}
+    /* medium*/
+@media  screen and  (min-width:768px) {
+    body{
+
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke,gold);
+    }
+
+}
+    /* LARGE*/
+@media  screen and  (min-width:1200px) {
+    body{
+
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke,firebrick);
+
+    }
+}
+
+/*XL*/
+@media  screen and  (min-width:612px) {
+    body{
+
+        background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke,rebeccapurple);
+    }
+}
+
+    /* MOBILE DEVICE LANDSCAPE */
+@media  screen and  (min-width:989px)  and (min-aspect-ratio:7/4){
+    body{
+
+        background-color: dodgerblue;
+        background-image: radial-gradient(whitesmoke,dodgerblue);
+    }
+
+    h1,h2{
+        font-size: 1.5rem;
+    
+    }
+ 
+}
+
+    </style>
+</head>
+<body>
+    <header>
+<h1>Header</h1>
+<nav><h2>nav</h2></nav>
+    </header>
+
+<main>
+    <div class="square">
+
+        <p>Hey</p>
+    
+    </div>
+    <div class="square">💻</div>
+    <div class="square">💻</div>
+    <div class="square">💻</div>
+    <div class="square">💻</div>
+    <div class="square">💻</div>
+    <div class="square">💻</div>
+    <div class="square">💻</div>
+    <div class="square square--highlight">💻</div>
+    <div class="square">💻</div>
+    <div class="square">💻</div>
+    <div class="square">💻</div>
+    <div class="square">💻</div>
+<!--<section>
+<h2>My Heading </h2>
+<p class="content"><p></p>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum,
+ totam tenetur officia, modi porro rerum velit laboriosam, sed ullam rem incidunt fuga. Facere
+  sit a culpa natus tempora at
+   quidem!</p>
+<br>
+<a href="grid.html">
+    Goggle
+</a>
+</section>
+<aside>
+<h2>Aside</h2>
+<p class="content">
+    <span class="tooltip"
+    data-tooltip="This is latin">Lorem   
+</span>
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+ Maiores animi tempore inventore voluptatibus, nobis hic dignissimos
+  quaerat quidem alias possimus veniam qui officia cum sapiente, optio dicta.
+   Doloremque, reprehenderit dignissimos.
+   Lorem ipsum dolor sit, amet consectetur adipisicing elit
+   . Quos ipsum dolore praesentium ut doloribus, eius, quasi moles
+   tiae accusamus natus reiciendis molestias, quisquam maiores magni qua
+   s autem? Consectetur minima fugiat et?
+</p>
+
+
+
+</aside>
+
+
+-->
+
+
+</main>
+
+
+<footer>
+    <h2>Footer</h2>
+</footer>
+.menu-button{
+
+
+    background-color: transparent;
+    border: none;
+    width:47px;
+    height:48px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position:relative;
+    }
+    
+    .menu-icon,
+    .menu-icon::before,
+    .menu-icon::after{
+    background-color: var(--HEADER-COLOR);
+    width: 40px;
+    height:5px;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0.5s;
+    
+    }
+    
+    .menu-icon::before,
+    .menu-icon::after{
+    
+    
+        content:"";
+    }
+    
+    .menu-icon::before{
+        transform:translate(-20px,-12px);
+    }
+    .menu-icon::after{
+        transform:translate(-20px,12px);
+    }
+    
+    
+
+</body>
+</html>

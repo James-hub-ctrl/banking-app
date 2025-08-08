@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator2.css">
+
+    
+</head>
+<body>
+        <div class="wrapper">
+        <div class="container">
+            <div class="blue">
+                <input type="text" id="input-el" disabled>
+            </div>
+            <div class="button">
+            <button class="price" onclick="clearDisplay()">C</button>
+            <button id="percentage"class="price" onclick="appendValue('%')">%</button>
+            <button id="factorial"  class="price"onclick="appendValue('n!')">n!</button>
+            <button id="delT"   class="price"onclick="appendValue('~')">~</button>
+            <button id="reciprocal" class="price"onclick="appendValue('~x')">1/x</button>
+            <button id="inverse" class="price"onclick="appendValue('x-2')">x<sup>-2</sup></button>
+            <button id="square"class="price"onclick="appendValue('x2')">x<sup>2</sup></button>
+            <button id="squareRoot"class="price"onclick="appendValue('~2')">~2</button>
+            <button class="price"onclick="appendValue('9')">9</button>
+            <button class="price"onclick="appendValue('8')">8</button>
+            <button class="price"onclick="appendValue('7')">7</button>
+            <button class="price"onclick="appendValue('+')">+</button>
+            <button class="price"onclick="appendValue('6')">6</button>
+            <button class="price"onclick="appendValue('5')">5</button>
+            <button class="price"onclick="appendValue('4')">4</button>
+            <button class="price"onclick="appendValue('-')">-</button>
+            <button class="price"onclick="appendValue('3')">3</button>
+            <button class="price"onclick="appendValue('2')">2</button>
+            <button class="price"onclick="appendValue('1')">1</button>
+            <button class="price"onclick="appendValue('*')">*</button>
+            <button class="price"onclick="appendValue('0')">0</button>
+            <button class="price"onclick="appendValue('.')">.</button>
+            <button  class="price" onclick="appendValue('/')">/</button>  
+            <button class="price"onclick="calculateResult()">=</button> 
+        </div>
+        </div>
+        </div>
+
+        
+    
+      <script src="cal.js">
+
+      </script>
+</body>
+</html>

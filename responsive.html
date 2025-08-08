@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 1.125rem;
+            color:darkslategrey;
+            margin:0;
+            background-color: pink;
+        }
+        h1{
+            font-size: 3rem;
+            color:#212614;
+            text-align: center;
+        }
+        
+        .col{
+        
+    
+        }
+        .col-1{
+width: 20%;
+           
+        } 
+        .col-2{
+
+            width: 60%;
+        } 
+        .col-3{
+            width: 70%;
+
+        }
+        h1 span{
+   color:#b7832f;
+        }
+        .pot{
+            background-color: cornflowerblue;
+            color:white;
+            padding: 0.7em;
+        }
+    
+
+        @media (max-width:600px){
+            .columns{
+           
+                flex-direction:column ;
+            }
+           
+           .col{
+               width:100%;
+           }
+                
+           }
+        
+
+           
+        p{
+            margin-top: 0;
+        }
+        
+        
+     .container{
+max-width: 980px;
+margin:0 auto;
+width:95%;
+     }
+     .columns{
+        display:flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin:1em 0;
+     }
+     
+       
+
+       /* a{
+            color:black;
+        }
+    .button{
+        display:inline-block;
+        background: #FFE600;
+        color:black;
+        padding: .5em 1.25em;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 50px;
+    }
+    h1{
+
+    }
+    h1,p{
+        margin-top: 0;
+    }
+    p{
+        font-size: 18px;
+    }
+    a{
+        color:black;
+    }
+.button:hover{
+    background:orange;
+
+}
+.btn-big{
+    font-size:1.5rem;
+
+}
+.btn-small{
+font-size: 0.75rem;
+}
+.accent-color{
+    color:#FFE600;
+}
+.links{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+       .mag{
+            width: 100%;
+            
+           }
+
+        /*.con{
+            width: 60%;
+            height:400px;
+            margin-left: 3rem;
+            margin-top: 4rem;
+            max-width: 620px;
+            min-width: 560px;
+        }
+.man{
+    top:0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: blue;
+    margin:0;
+    color:white;
+    text-align: center;
+    
+   }
+   .section-two{
+    background-color: #2e354f;
+    margin:0;
+    bottom: 0;
+    position: fixed;
+    color:white;
+    width:100%;
+   }
+   
+   ul{
+    font-size:1.5rem;
+       
+   }
+   .container{
+    width:620px;
+    margin:0 auto;
+   }
+   .section-one{
+
+    font-size: 2rem;
+   }
+   h1,h2{
+    font-weight: 900;
+   }
+   h1
+   {
+font-size: 3rem;
+margin:0;
+   }
+   h2{
+    font-size: 2rem;
+    color:#ef5839;
+   }*/
+  
+
+img{
+    max-width: 100%
+}
+
+
+    </style>
+</head>
+<body>
+   <!--- <div class="can">
+    <h1 class="man"> CSS units-em</h1>
+    <div class="con">
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<section class="section-one">
+    <div class="container">
+        <h2>putting ems to use</h2>
+    </div>
+</section>
+
+    
+        <br>
+        <br>
+        <ul>
+            <li>one list item</li>
+            <li>two list item</li>
+            <li>three list item</li>
+            <li>four list item</li>
+            <li>five list item</li>
+
+
+        </ul>
+
+    </div>
+
+
+<section class="section-two">
+<div class="container">
+
+    <h2>section Two</h2>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore temporibus expedita molestias
+    , incidunt harum pariatur explicabo nam. 
+    Ducimus ab sit rem adipisci magni, at mollitia aperiam voluptate, facilis, natus perspiciatis?
+   Deserunt odit, dolore iusto odio quis recusandae, quibusdam, laborum similique 
+   minima porro dolor! Obcaecati necessitatibus eligendi ab magnam! Tempora necessitatibus voluptatum 
+   ipsam pariatur aspernatur deserunt cupiditate voluptates est magni? Ut!
+   Molestias eveniet deserunt et.<a href="navbar.html"> lorem</a>, consequatur. Veniam voluptates ex, quaerat sed 
+   debitis mollitia ipsa nulla asperiores est deserunt dicta aspernatur praesentium fugiat vitae
+    doloremque a alias perspiciatis modi, excepturi pariatur!</p>
+    <a href="navbar2.html">contact us</a>
+    <a href="navbar3.html">contact us</a>
+  
+</div>
+
+</section>
+
+<div class="card">
+    <h1>nisi subscript<span class="accent-color">asicpineumebfwe</span> est ulteralsacs interger suis alter</h1>
+    <p>teh friger deon fry groe gorfre <a href="#">hteevft fuestes est </a>comment tul  appelle
+    <strong>elenmetum tues happite don est que tu aller</strong>jue est tul happite on jas quere
+    </p>
+
+    <p class="links">
+        <a class="button btn-big" href="nay.html">contact me</a>
+        <a class="button" href="nay.html">default </a>
+       
+        <a class=" button btn-small" href="nay.html" >about me</a>
+    </p>
+</div>-->
+
+
+
+<div class="container">
+    <h1>let start <span>thinking a little</span> more fancy</h1>
+<img src="restaraunt - Copy.jpg" alt="elephant in their natural habitat">
+<div class="columns">
+    <div class="col col-1">
+        <br>
+        <h2>Dolor sit</h2><br>     
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid sapiente illum eligendi totam quidem,
+             modi debitis? Itaque, placeat commodi odit enim inventore vel, dolorem, sint libero necessitatibus 
+        explicabo at!
+        Et corrupti nesciunt facilis reprehenderit incidunt ullam nisi tenetur necessitatibus sapiente dolore, officia non doloribus, magnam dolor consequatur sit tempora
+         vero assumenda sunt. Rerum magni at laudantium. Nam, tempora doloribus.
+        Culpa maxime necessitatibus dolorem quasi nihil distinctio quo. Aliquam, quisquam. Molestiae
+         exercitationem reprehenderit ducimus, quasi dolore similique nemo sunt
+         obcaecati sint quis illo hic nostrum consectetur possimus tempore veritatis natus?</p>
+         <br>
+    </div>
+    <div class="col col-2">
+        <h2>consectetur adipisicing</h2><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates necessitatibus natus dicta in ad quaerat, molestias facilis explicabo consectetur debitis magnam quo laudantium repudiandae praesentium incidunt! Obcaecati qui impedit quas!
+        Iusto unde ex officia quam vero saepe earum adipisci non facilis aperiam soluta, esse in officiis expedita, voluptates tempora nemo! Vitae sequi tenetur optio molestias dolorum quos aut fugit expedita!</p>
+        <br>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem qui cupiditate perspiciatis consectetur dolor, reprehenderit quos commodi inventore repudiandae minima alias quasi hic officia earum magnam beatae blanditiis aliquam illum?
+         Quas, unde odit, facere pariatur cupiditate saepe quod facilis doloribus, minima odio error ex provident inventore? Fugit nostrum optio corrupti nulla odio ea animi corporis, sapiente vero voluptatum iure fuga.
+         Quae repudiandae eveniet, consectetur sequi aperiam dicta nisi quo rem neque recusandae velit qui? Aperiam iste sequi corporis laboriosam quibusdam, aut quisquam excepturi dolore deserunt at quam quod dolores ipsam!</p>   
+    </div>
+    <br>
+    <div class="col col-1">
+        <p class="pot">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta possimus iure blanditiis non magnam repellendus quos, earum corporis dolore consequuntur quidem praesentium architecto debitis. Perferendis iste unde earum dignissimos tenetur.
+        Quod fuga similique officiis delectus dolore temporibus! Saepe quae eaque tempora, quasi voluptatem atque illum dolor voluptates sunt. Aliquam vero modi sit veniam assumenda architecto debitis dolor a illo molestias?
+        Quam deserunt voluptas facere illum nam, maiores ipsum minima illo sint rem doloremque provident quibusdam aut optio nostrum dignissimos, consequatur libero nisi tempore asperiores! Aspernatur modi non nemo esse officia!
+        Deserunt, vero eum. Dolore, praesentium autem? At voluptas dolore illo eaque assumenda! Aliquam, consectetur. Provident velit tenetur consequuntur, eum incidunt reprehenderit id reiciendis explicabo qui, modi, ea dolores cum quaerat?</p>
+    </div><br>
+    <br>
+</div>
+<div class="columns">
+    <div class="col col-3">
+     <h2>Deserunt mollit id est laborum</h2><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, recusandae voluptatibus ullam accusantium eligendi quae provident minus, aliquid assumenda, dolorum doloremque. Iusto eligendi ut laudantium quia iure laboriosam aliquid exercitationem.
+        Debitis molestias rem totam minus vel quam distinctio fuga ad reprehenderit maiores! Totam cumque maiores a repellendus ratione vero soluta, illum placeat porro ex dolores explicabo animi optio alias nam.
+        A, similique dolorum, laborum excepturi ratione repellendus animi dignissimos accusamus error fuga, tempora eligendi id sit mollitia voluptas nobis! Neque laudantium, tempore hic repellat doloremque iste mollitia reprehenderit enim corrupti?</p>
+    
+    </div>
+    <div class="col col-1">
+        <P class="pot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum laudantium non id porro, officia sapiente quam eum laborum amet aut possimus distinctio at ea vel hic optio? Dignissimos, provident blanditiis!</P>
+    </div>
+
+</div>
+
+
+</div>
+
+</body>
+</html>

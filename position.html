@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page</title>
+</head>
+<style>
+.outer-container{
+    border:3px dashed black;
+    width: 65vw;
+    height:115vh;
+    margin:40px auto;
+
+    position:relative;
+}
+.inner-container{
+
+    border:2px solid blue;
+    width: 40vw;
+    height:30vh;
+    margin:200px auto;
+    position:relative;
+}
+
+.box{
+
+
+    width:120px;
+    height:150px;
+    color:red;
+    padding: 1rem;
+
+}
+
+
+.fixed {
+
+
+    background-color:green;
+    position:fixed;
+    top:100px;
+}
+
+.absolute{
+
+
+    background-color: blue;
+    position:absolute;
+    top: 100px;
+    left:50;
+}
+
+/*  remember, to make things disappear*/
+
+/*/////////////////////////////*/
+
+
+
+
+
+section{
+
+    height :100vh;
+}
+
+.blue{background-color: blue;}
+.red{ background-color: red;}
+.green{ background-color: green;}
+
+header,footer{
+    color:white;
+    text-align: center;
+    position: sticky;
+    top:0;
+}
+
+header{
+
+    position: sticky;
+    top:0;
+    font-size: 3rem;
+
+}
+
+footer{
+background-color: black;
+position: sticky;
+bottom:0;
+font-size: 3rem;
+
+}
+a:visited{
+
+background-color: royalblue;
+color: white;
+font-size: inherit;
+padding: 1rem;
+position:fixed;
+top:30%;
+left:0;
+z-index:1;
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+<div class="outer-container">
+    <div class="inner-container">
+<div class="box absolute">
+<p>Absolute</p>
+
+
+
+
+<div class="box relative">
+<p>Relative</p>
+<div class="box-fixed">
+<p>FIXED</p>
+<div class="box sticky">
+</div>
+    <p>sticky</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<button class="social">A</button>
+<section id="one">
+
+
+
+<header class="blue">header one </header>
+<h2>one</h2>
+</section>
+
+<section id="two">
+<header class="red">header two </header>
+<h2>Two</h2>
+</section>
+
+<section id="three">
+<header class="green">header three</header>
+<h2>three</h2>
+</section>
+
+
+<footer>
+<a href="kill.html">one</a>/
+<a href="delta.html">two</a>/
+<a href="otoo.html">three</a>
+</footer>
+</body>
+</html>

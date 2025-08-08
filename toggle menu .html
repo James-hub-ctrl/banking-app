@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle button</title>
+
+    <style>
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-button{
+    background-color:transparent;
+    border: none;
+    width: 48px;
+    height:49px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after{
+    background-color: blue;
+    width: 20px;
+    height:4px;
+    border-radius:7px;
+    position: absolute;
+    transition: all 0.5s;
+
+}
+
+.menu-icon::before,
+.menu-icon::after{
+
+    content:"";
+}
+
+.menu-icon::before{
+
+    transform:translate(-20px,-12px);
+}
+.menu-icon::after{
+    transform:translate(-20px,12px);
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <button class="menu-button">
+            <div class="menu-icon">
+
+            </div>
+        </button>
+    </header>
+    
+</body>
+</html>

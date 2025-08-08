@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+        thead,tbody,tfoot,tr{
+
+display: contents;
+}
+/* || VARIABLES*/
+:root{
+/*FONTS*/
+
+--FF:'nunito', sans serif;
+--FF-HEADINGS:"Fugaz one", cursive;
+--FS:clamp(1rem, 2.2vh,1.5rem);
+/* COLORS*/
+--BGCOLOR:orange;
+--BGCOLOR-fade:rgb(252,220,160);
+--BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR),var(--BGCOLOR-fade));
+--BODY-BGCOLOR:#FFF;
+--FONT-COLOR:#000;
+--BORDER-COLOR:#333;
+--HIGHLIGHT-COLOR:rgb(51,178,51);
+--LINK-COLOR:#000;
+--LINK-HOVER:hsla(0,0%,0%,0.6);
+--LINK-ACTIVE:orange;
+--HEADER-BGCOLOR:#000;
+--HEADER-COLOR:#fff;
+--NAV-BGCOLOR:#fff;
+--HERO-BGCOLOR:rgba(51,178,51,0.75);
+--HERO-COLOR:#fff;
+
+/* BORDERS */
+--BORDERS: 1px solid var
+(--BORDER-COLOR);
+--BORDER-RADIUS:15px;
+
+
+/* STANDING PADDING*/
+--PADDING-TB:0.25em;
+--PADDING-SIDE:2.5%;
+
+/*STANDARD MARGIN*/
+--MARGIN:clamp(1em,2.5vh,1.5em)
+0;
+
+}
+@media (prefers-color-scheme:dark) {
+    :root{
+        -
+    }
+    
+}
+
+
+.menu__container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+                      "hd1 hd2  hd3 "
+                        "cr cr1 cr1p"
+                          "cr cr2 cr2p"
+                          "cr cr3 cr3p"
+                          "sf sf1 sf1p"
+                           "sf sf2 sf2p"
+                           "sf sf3 sf3p"
+                           "cs cs cs";
+                           gap:0.1em;
+                           margin-bottom: 1em;
+}
+
+
+.menu__cr{
+    grid-area:cr;
+}
+
+.menu__sf{
+    grid-area:sf;
+}
+.menu__cs{
+    grid-area:cs;
+
+
+} 
+
+.menu__cr,
+.menu__sf,
+.menu__cs
+.menu__header{
+    color:var(--HIGHLIGHT-COLOR);
+    font-weight: bold;
+    height: 100%;
+    display:grid;
+    place-content: center;
+}
+.menu__header,.menu__item{
+    width: 100%;
+    padding: 1em;
+    border: medium ridge var(--BORDER-COLOR);
+
+}
+.menu__item{
+
+    display:grid;
+    place-content: center;
+}
+
+thead th:first-child{
+
+    border-top-left-radius: var(--BORDER-RADIUS);
+
+}
+
+thead th:last-child{
+border-top-right-radius: var(--BORDER-RADIUS);
+}
+
+tfoot td{
+
+    border-bottom-left-radius: var(--BORDER-RADIUS);
+    border-bottom-right-radius: var(--BORDER-RADIUS);
+}
+@media screen and(min-width:576)
+{
+
+    .header__h1::before{
+
+        content:'🌮'
+    }
+    .header__h1::after{
+
+content:'🌮'
+}
+
+.menu__header,
+.menu__cr,
+.menu__sf,
+.menu__cs{
+
+    font-size: 125%;
+}
+
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <caption>Our Menu</caption>
+        <table class="menu__container">
+            <thead>
+                <tr>
+            <th class="menu__header" scope="col"> Tacos</th>
+            <th class="menu__header" scope="col">Quantity</th>
+            <th class="menu__header" scope="col">price</th>
+            </tr>
+            </thead>
+            <tbody>
+         <tr>
+            <th  class="menu__item menu__cr"scope="row" rowspan="3">crunchy</th>
+            <td class="menu__item">1</td>
+         <td class="menu__item">$1.50</td>
+         </tr>
+            <td class="menu__item">2</td>
+            <td class="menu__item">$2.50</td>
+         </tr>
+         <tr>
+            <td class="menu__item">3</td>
+            <td class="menu__item">$3.25</td>
+         </tr>
+         <tr>
+            <th class="menu__item  menu__sf"scope="row" rowspan="3">soft
+            </th>
+            <td class="menu__item">1</td>
+            <td class="menu__item">$2.00</td>
+         </tr>
+         <tr>
+            <td class="menu__item">2</td>
+            <td class="menu__item">$3.50</td>
+         </tr>
+         <tr>
+            <td class="menu__item">3</td>
+            <td class="menu__item">$4.50</td>
+         </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="menu__item menu__cs" colspan="3">
+                         chips &amp; salsa $2
+                    </td>
+                </tr>
+            </tfoot>
+    
+    
+    
+        </table>
+        <a href="#">Back To Top</a>
+</body>
+</html>

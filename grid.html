@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.profile-pic-figure{
+
+  width:35%;
+}
+
+
+.profile-pic-figure img{
+width:40%;
+height: 200px;
+min-width:34px;
+border: 5px solid red;
+border-radius: 50%;
+
+}
+
+/* img{ display:block;} */
+body{
+
+  font-family: "Nunito";
+  min-height: 100vh;
+  background-color: aliceblue;
+ /* background-image: url("../images/ore.jpg"),linear-gradient(steelblue,yellowgreen);
+                       background-size: 100%;
+                       background-repeat:no-repeat;
+                       background-position:right-center;*/
+  
+                       
+}
+
+.hero{
+
+  border-bottom: 2px solid blue;
+  padding: 1px;
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  gap:30px;
+  background-color: rgba(0, 0, 100, 0);
+
+}
+.clip{
+
+  font-weight:800;
+  font-size:18rem;
+  text-align:center;
+  background-image:url("../images/watetfall.jpg");
+  background-size: 100%;
+  text-transform: uppercase;
+-webkit-background-clip:text;
+color:rgba(0, 0, 0, 0.178);
+
+
+}
+
+
+.example{
+  margin-top: 1rem;
+padding-left:20px;
+border:1px solid red;
+}
+.example img{
+  width:25%
+}
+
+.h1{
+
+font-size: 500%;
+color:aliceblue;
+text-shadow: 2px 2px 5px black;
+/*background-color: rgba(0, 0, 0, 0.244);
+ padding:0.25rem;
+border-radius: 10px; */
+
+}
+.container{
+
+  background-color: #4545ae;
+background-image: url('../watetfall.jpg');
+background-repeat:no-repeat;
+background-size: cover;
+background-position: center;
+
+
+}
+
+img {display:block; }
+/* End Reset*/
+
+
+/*Utility Classes*/
+ .nowrap{
+
+  white-space: nowrap;
+ }
+
+
+ .offscreen{
+
+  position:absolute;
+  left: 2000px;
+ }
+/* End utility classes*/
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+<!--<div class="container">
+    
+<section class="hero">
+<figure class="profile-pic-figure">
+  <img src="james.jpg" alt="profile picture" width="800" height="80">
+  <figcaption class="offscreen"> james</figcaption>
+</figure>
+<h1 class="h1">
+
+<span class="nowrap">hello
+</span>
+<span class="nowrap">i'm jane</span>
+</h1>
+
+</section>
+</div> -->
+
+  <!-- 
+    <section class="example">
+  <p>
+
+ <img src="james.jpg" alt="pattern 1" width="200" height="200">
+  </p>
+ -->
+
+    </section>
+
+
+<section>
+
+<p class="clip">jane</p>
+
+</section>
+
+
+</body>
+</html>

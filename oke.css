@@ -1,0 +1,93 @@
+
+ .container {
+font-size:2rem;
+border: 2px dashed blue;
+width:6em;
+margin:1rem 2rem 2rem 2rem;
+/*margin-top: 1rem;
+margin-right:2rem;
+margin-bottom: 2rem;
+margin-left:2rem;*/
+padding: 1rem;
+}
+
+h3{
+font-size:32px;
+ color:blue;
+ border:12px double red;
+ border-top:1.0em solid green;
+border-right:1. 2em dashed yellowgreen;
+   width: 4.5em;
+   padding: 2rem;
+   outline:5px
+
+   margin:2rem 2rem 1rem 2rem;
+   /*margin-top:1rem;
+   margin-bottom:2rem;
+   margin-left: 2rem;
+   margin-right:2rem;*/
+
+}
+
+
+
+.circle{
+
+    margin:2rem auto;
+background-color: blue;
+width: 100px;
+height:100px;
+border:2px solid black ;
+border-radius: 90px;
+outline:2px solid red;
+outline-offset:0.26rem ;
+}
+
+body{
+
+padding: 10%;
+font-size:2rem;
+
+}
+
+input,button{
+    font:inherit;
+}
+p{
+    letter-spacing: 0.2em;
+    font-weight: 300;
+}
+
+
+
+
+.violet{
+
+    color:violet;
+    border: 12px double red;
+    border-bottom: 1em double blue;
+    width: 200px;
+    padding: 4em;
+    margin:2rem 2rem 1.5rem 1.5rem;
+    font-size:21px;
+    font-family:monospace;
+    text-transform:uppercase;
+    outline:2px solid green;
+     outline-offset: 0.2em;
+
+}
+
+
+
+
+.yellowgreen{
+
+padding:4rem;
+border:1px solid yellowgreen;
+margin:2em auto;
+width: 200px;
+height: 200px;
+background-color: blue;
+outline:2px solid yellow;
+outline-offset: 0.6rem;
+}

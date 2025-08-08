@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color:white;
+        }
+        .menu-button{
+
+
+background-color: transparent;
+border: none;
+width:47px;
+height:48px;
+display: flex;
+justify-content: center;
+align-items:center;
+position:relative;
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after{
+background-color: blue;
+width: 40px;
+height:5px;
+border-radius: 5px;
+position: absolute;
+transition: all 0.5s;
+
+}
+
+.menu-icon::before,
+.menu-icon::after{
+
+
+    content:"";
+}
+
+.menu-icon::before{
+    transform:translate(-20px,-12px);
+}
+.menu-icon::after{
+    transform:translate(-20px,12px);
+}
+
+
+
+    </style>
+</head>
+<body>
+    <section class="header-title-line">
+        <h1> Acme Co.</h1>
+        <button class="menu-button">
+        <div class="menu-icon"></div>
+        </button>
+                </section>
+        
+    
+</body>
+</html>
+
+
+
+
+
+

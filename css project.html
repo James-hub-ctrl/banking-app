@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+/* ||  RESET */ 
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+
+img{
+
+    display:block;
+    margin-right: 0.9em;
+    min-width: 72vw;
+}
+
+/*UTILITY CLASSES*/
+.nowrap{
+
+white-space: nowrap;
+
+}
+html {
+
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+font-size: 1.5rem;
+font-family: monospace;
+background-color:#475569;;
+background-image: radial-gradient(whitesmoke,#475569);
+display:flex;
+flex-direction: column;
+min-height:100vh;
+}
+
+header,
+footer,
+nav,
+main{
+
+display:grid;
+place-content: center;
+text-align: center;
+
+}
+
+:where(header,footer, .card){
+
+position:sticky;
+background-color:#1e293b;
+color:whitesmoke;
+}
+
+main{
+flex-grow: 1;
+display:flex;
+flex-direction: column;
+align-items: center;
+
+}
+header{
+    color:red;
+}
+
+nav{
+
+    background-color: whitesmoke;
+    display: flex;
+justify-content: space-evenly;
+}
+
+header{
+
+    top:0;
+
+}
+
+
+
+/*||  PROFILE CARD */
+
+.card{
+
+
+
+    scroll-margin-top: 8rem;
+    width: min(100%,350px);
+    background-color:antiquewhite;
+    border: 2px solid #000;
+    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    border-radius: 15px;
+}
+
+
+.card figure{
+
+    display: flex;
+    flex-flow:column nowrap;
+
+}
+
+.card img{
+
+border:5px double #333;
+border-radius:48%;
+
+}
+.card img:not([alt]){
+
+border: 10px solid red;
+}
+
+.card:nth-child(2){
+
+    background-color:papayawhip;
+}
+
+.card figcaption{
+
+
+
+    font-weight: bolder;
+    font-size: 2rem;
+    margin:1rem;
+    text-align: center;
+}
+.card figcaption:after{
+    content: ' hello';
+}
+
+.card p:before{
+    content:open-quote;
+    font-size:3rem;
+    position:absolute;
+}
+.card figcaption::first-letter{
+    content:
+}
+
+/* SMALL */
+@media screen and (min-width:576px)  {
+
+body{
+  
+background-color: green;
+background-image: radial-gradient(whitesmoke, green);
+}
+main{
+
+justify-content: center;
+flex-flow: row wrap;
+padding: 1rem;
+}
+
+.card{
+
+width: min(100%,400px);
+}
+
+.card:last-child{
+
+    order:-1
+}
+
+}
+/* medium*/
+@media  screen and  (min-width:768px) {
+    nav{
+
+        display:none;
+    }
+
+    .card{
+ width: min(100%, 325px);
+
+    }
+
+
+.card figure{
+
+flex-flow: column-reverse;
+
+}
+
+.card figcaption{
+
+    margin:0.1em  0; 
+
+}
+.card p{
+
+    margin-top: 1rem;
+}
+
+}
+
+
+
+    /* LARGE*/
+@media  (min-width:1200px) {
+    
+.card{
+    width: min(100%,400px);
+
+
+
+}
+
+nav a:active{
+    color: red;
+}
+
+
+.card:nth-child(2){
+
+    order:-1;
+}
+
+}
+
+/*XL*/
+@media  screen and  (min-width:612px) {
+
+
+.card{
+
+    width:min(calc(33% - 1rem), 500px);
+}
+
+    
+}
+    /* MOBILE DEVICE LANDSCAPE */
+@media  screen and  (min-width:1200px)  and (min-aspect-ratio:7/4){}
+
+</style>
+
+
+</head>
+<body>
+    <header>
+        <h1>Our Staff</h1>
+        <nav>
+        
+    
+        <a href="position.html">joe</a>
+        <a href="sun.html">matt</a>
+        <a href="grid html">jane</a>
+    </nav>
+    </header>
+
+
+    <main>
+        <article id="profile1" class="card">
+            <figure>
+                <img src="james.jpg" alt="joe  coder" width="200" height="250" >
+            
+                <figcaption> joe coder</figcaption>
+            </figure>
+        <p><q> i code stuff.</q></p>
+        </article>
+
+
+
+
+        <article id="profile2" class="card">
+            <figure>
+        <img src="james.jpg"  alt="Matt riddle" width="200" height="250">
+        <figcaption> matt riddle</figcaption>
+        <p><q>i design stuff</q></p>
+            </figure>
+        </article>
+
+
+            <article id="profile3" class="card">
+                <figure>
+            <img src="james.jpg"  alt="jane Del an" width="200" height="250">
+            <figcaption>  jane Del an</figcaption>
+            <p><q>i code stuff</q></p>
+                </figure>
+            </article>
+        </main>
+
+
+        
+<footer>
+<p>&copy; ACNE Co.</p>
+</footer>
+
+
+    
+</body>
+</html>

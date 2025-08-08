@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>animation.css</title>
+
+
+    <style>
+        *{
+            
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+body{
+
+font-size: 2rem;
+font-family: monospace;
+font-weight: bolder;
+flex-flow: column nowrap;
+
+}
+
+/*main{
+
+    flex-grow: 1;
+    place-content: center;
+    align-items: center;
+    display:flex;
+    flex-flow: column nowrap;
+    gap:1rem;
+
+
+}
+
+
+div{
+
+place-content: center;
+display: grid;
+width: 200px;
+height:200px;
+border:1px solid whitesmoke;
+
+
+}
+
+
+div:first-child{
+
+background: cornflowerblue;
+transform: skew(190deg,-190deg);
+transform:rotateY(180deg)
+
+}
+
+div:nth-child(2){
+
+    background-color: yellowgreen;
+    transform:translateY(30deg);
+    transform:scale(60%,85%);
+}
+
+div:last-child{
+
+    background-color: red;
+    transform: rotate(180deg, -167deg);
+
+}
+div:last-child:hover{
+
+    transform: rotate(180deg);
+}
+
+
+div:hover{
+
+    background-color: midnightblue;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+
+
+}
+
+.animate{
+   
+
+    animation:5s ease-in-out 1s 2 normal forwards slide;
+}*/
+
+
+
+
+
+/*@keyframes slide{
+0%{
+
+transform:translateX(0);
+
+
+}
+44%{
+ transform:translateX(600px), rotate(-180deg);
+
+}
+66%{
+
+
+    transform:translateX(-300px),rotate(-180deg);
+
+}*/
+
+/*100%{
+
+
+    transform: translateX(0);
+    background-color: aqua;
+}
+
+
+}*/
+
+
+
+:root{
+
+    --HEADER-BGCOLOR:#333;
+    --HEADER-COLOR:whitesmoke;
+}
+
+header{
+
+background-color: var(--HEADER-BGCOLOR);
+color:var(--HEADER-COLOR);
+
+}
+
+.header-title-line{
+display:flex;
+flex-flow:  nowrap;
+justify-content: space-evenly;
+}
+
+.menu-button{
+     
+    
+}
+
+ .menu-icon,
+ .menu-icon::before,
+ .menu-icon::after{
+
+    background-color: var(--HEADER-COLOR);
+    width: 48px;
+    height:47px;
+
+ }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+
+    <main>
+        <!--<div class="square">💻</div>
+        <div class="square">💻</div>
+        <div class="square animate">💻</div>
+         </main>-->
+
+         <header>
+
+            <section class="header-title-line">
+    <h1> Acme Co.</h1>
+    <button class="menu-button">
+    <div class="menu-icon"></div>
+    </button>
+            </section>
+    
+    
+    
+        <nav>
+    <ul>
+    
+        <li><a href="ori.html">Products</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+        </nav>
+        </header>
+    
+    
+    
+     
+</body>
+</html>

@@ -1,0 +1,38 @@
+*{
+
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    min-width: 100px;
+}
+
+#input-el{
+
+    width: 77%;
+    height: 34%;
+    padding: 1.4em 1.4em;
+    margin-top: 0.81em;
+}
+
+button{
+    color:aliceblue;
+    background-color: #5f9341;
+     margin-top: 0.7em;
+    border:1px solid #5f9341;
+    padding: 10px 10px;
+
+}
+
+ #edit-el{
+
+    background-color:white;
+    color: #5f9341;
+    display: none;
+}
+ol{
+
+    text-align: center;
+}

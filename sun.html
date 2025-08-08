@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*||  RESET*/
+*{
+
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+img{
+
+display:block;
+max-width: 100%;
+height:auto;
+
+}
+
+
+
+/* ||UTILITY CLASSES*/
+.nowrap{
+white-space: nowrap;
+
+}
+
+html{
+
+
+    scroll-behavior: smooth;
+
+}
+
+body{
+
+font-size: 1.5rem;
+min-height: 100vh;
+font-family: "Nunito" sans-serif;
+background-color:#475569;
+background-image: radial-gradient(whitesmoke,#475569);
+display:flex;
+flex-direction: column;
+}
+
+
+header,
+nav,
+main,
+footer{
+
+    display: grid;
+    place-content: center;
+    text-align: center;
+
+}
+header,
+footer{
+    position: sticky;
+    background-color:#1e293b;
+    color:whitesmoke;
+    text-align: center;    
+
+}
+header{
+
+    top:0;
+}
+
+
+/* ||  PROFILE CARD */
+
+.card{
+
+scroll-margin-top:8rem;
+width: min(100%, 350px);
+background-color: antiquewhite;
+border-radius:15px;
+padding:1rem;
+display:flex;
+flex-direction:column;
+align-items: center;
+
+}
+
+.card figure{
+
+display:flex;
+flex-flow: column-nowrap;
+
+
+}
+
+.card img{
+    border:5px double#333;
+    width:98%;
+    height: 230px;
+    border-radius: 400%;
+
+}
+.card figcaption{
+
+
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+main{
+
+
+    flex-grow: 1;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5rem;
+    padding: 1rem;
+}
+nav{
+
+    background-color: white;
+    padding: 0.5rem;
+    border-bottom: 2px solid #000;
+    font-weight: bolder;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+nav a, 
+nav a:visited{
+
+    color:#000;
+}
+
+nav a:hover, nav a:focus{
+
+    color:hsla(0, 0%, 0, 20%, 0.6 );
+
+}
+
+
+/
+
+/*|| MEDIUM */
+@media screen and (min-width:760px) {
+
+body{
+
+background-color: gold;
+background-image: radial-gradient(whitesmoke, gold);
+
+}
+
+}
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Our Staff</h1>
+        <nav>
+<a href="grid.html">joe</a>
+<a href="grid.html">matt</a>
+<a href="grid.html">jane</a>
+
+        </nav>
+
+
+            </header>
+
+
+
+            
+        
+        <main>
+            <article id="profile1" class="card">
+                <figure>
+                    <img src="james.jpg" alt="joe  coder" width="=500" height="500">
+                
+                    <figcaption> joe coder</figcaption>
+                </figure>
+            <p><q> i code stuff.</q></p>
+
+            </article>
+
+            <article id="profile1" class="card"></article>
+            <figure>
+                <img src="james.jpg" alt="Matt designer" width="=500" height="500">
+            
+                <figcaption> joe coder</figcaption>
+
+                <article id="profile1" class="card"></article>
+            </figure>
+        <p><q> i design stuff</q></p>
+        <figure>
+            <img src="james.jpg" alt=" Jane Dev Rel" width="=500" height="500">
+        
+            <figcaption>Jane <span class="nowrap">Del Rel</span></figcaption>
+        </figure>
+    <p><q> i teach stuff</q></p>
+        
+        </main>
+        
+        
+        <footer>
+            <p>&copy; ACNE Co.</p>
+        </footer>
+        
+
+
+</body>
+</html>

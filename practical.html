@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+*{
+padding:0;
+margin:0;
+box-sizing: border-box;
+}
+body{
+
+ font-family: monospace;
+ font-size: 0.9em;
+ font-weight: bolder;
+ display:flex;
+ flex-flow: column nowrap;
+ color:white;
+}
+h1{
+    place-content:center;
+justify-content: space-around;
+margin-left: 17em;
+color:blue;
+font-family: monospace;
+font-size: 3em;
+font-weight: bolder;
+
+
+}
+
+.header{
+
+    background-color: rgba(0, 0, 0, 0.502);
+color:white;
+padding: 1rem 1rem 1rem 0.5rem;
+display:flex;
+justify-content: space-evenly;
+flex-flow:flex;
+}
+.header__btn{
+    width: 100px;
+    height:100px;
+    border-radius:15px;
+}
+.header___btn__secondary{
+    background-color: yellow;
+}
+
+.header__btn--lean{
+
+transform: skewX(-10deg);
+}
+.header__btn--border-lg{
+
+border: 5px solid whitesmoke;
+}
+
+
+/*header{
+
+    background-color: rgba(0, 0, 0, 0.228);
+    padding:0.8rem;
+}
+ul{
+
+
+    text-align: center;
+    font-size: 2em;
+    font-family: monospace;
+    font-weight: bolder;
+
+}
+
+.header-title-line{
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    display: flex;
+}
+
+.menu-button{
+    background-color: transparent;
+    border: none;
+    border: none;
+    width: 45px;
+    height:48px;
+    justify-content: center;
+    display: flex;
+   align-items:center;
+   position:relative;
+}
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after{
+background-color:whitesmoke;
+width:35px;
+height:6px;
+border-radius:25px;
+position:absolute;
+transition: all 0.5s;
+}
+.menu-icon::before,
+    .menu-icon::after{
+    
+    
+        content:"";
+    }
+    
+    .menu-icon::before{
+        transform:translate(-20px,-14px);
+    }
+    .menu-icon::after{
+        transform:translate(-22px,12px);
+    }
+    */
+
+
+
+</style>
+
+</head>
+<body>
+    <header>
+
+        <section class="header-title-line">
+<h1> Acme Co.</h1>
+<button class="menu-button">
+<div class="menu-icon"></div>
+</button>
+        </section>
+
+
+
+    <nav>
+<ul>
+
+
+    <li><a href="ori.html">Products</a></li>
+    <li><a href="#">Forum</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+    </nav>
+    </header>
+
+    <header class="header">
+        <h1 class="header__title">BEM</h1>
+        <nav class="header_nav">
+        <button class="header__btn">💻</button>
+        <button class="header__btn header__btn--secondary">💻</button>
+        <button class="header__btn header__btn--lean header__btn--border-lg">💻</button>
+    </nav>
+    </header>
+    
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        
+        }
+        body{
+
+font-weight: bold;
+text-align: center;
+height:100px;
+justify-content: center;
+display:flex;
+
+}
+
+.container{
+    display:grid;
+    flex-direction:column-reverse;
+    width:19.7%;
+    line-height: 0;
+    height:460px;
+    margin-top: 70px;
+    border-bottom: 4px solid black;
+    border-right:3px solid black;
+    border-top: 11px solid black;
+    border-left: 4px solid black;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.374);
+}
+input{
+
+    width: 80%;
+    margin-top: 12px;
+    height:25px;
+}
+.button{
+
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: space-between;
+    margin-top: 29px;
+    
+}
+
+.blue{
+    color:black;
+    font-size: 1.4rem;
+margin-top: 2px;
+color:rgb(132,132,132);
+
+}
+.price{
+ width:57px;
+ height:57px;
+ margin:2px;
+ color:rgb(132,132,132);
+ background-color: #f0f0f0;
+ cursor: pointer;
+ border-radius: 5px;
+
+}
+.price:hover{
+    background-color:#ffb700;
+}
+.price:focus{
+
+    outline:none;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+}
+.price{
+    box-shadow: 0 0 10px rgba(71, 138, 74, 0.5);
+    outline:1px solid #ccc;
+    outline-offset:2px;
+
+}
+.red{
+    background-color: brown;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="container">
+        <div class="blue">
+            <input type="text" id="calculator-input" readonly>
+        </div>
+        <div class="button">
+        <button class="price">%</button>
+        <button class="price">CE</button>
+        <button class="price">C</button>
+        <button class="price">//</button>
+        <button class="price">1/x</button>
+        <button class="price">x<sup>2</sup></button>
+        <button class="price">x<sup>-2</sup></button>
+        <button class="price">%</button>
+        <button class="price">9
+        </button>
+        <button class="price">8</button>
+        <button class="price">7</button>
+        <button class="price">6</button>
+        <button class="price">4</button>
+        <button class="price">5</button>
+        <button class="price">4</button>
+        <button class="price">3</button>
+        <button class="price">2</button>
+        <button class="price">1</button>
+        <button class="price">+</button>
+        <button class="price">=</button>
+        <button class="price">+/-</button>
+        <button class="price">0</button>
+        <button class="price">.</button>
+        <button class="price red">AC</button>   
+    </div>
+    </div>
+    </div>
+
+    
+    
+            
+
+</body>
+</html>

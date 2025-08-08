@@ -1,0 +1,112 @@
+*{
+ margin:0;
+ padding: 0;
+ box-sizing:border-box;
+
+}
+
+
+body{
+font-family: monospace;
+font-size: 24px;
+line-height:1.9;
+background-color: aqua;
+color:red;
+
+}
+
+
+
+p{
+ 
+    color: purple !important;;
+    font-size:27px;
+    font-style: italic;
+    width:40ch;
+}
+
+.violet{
+
+    color:violet;
+    font-size: 29px;
+    font-style: oblique;
+}
+
+h2{
+    
+    font-size:19px;
+    font-family: 'Times New Roman', Times, serif;
+     color:yellowgreen;
+}
+
+h1{
+    color:blueviolet;
+    width: 50%;
+    font-size: 3rem;
+    padding:0.5em;
+}
+
+
+span{
+
+    color:blue;
+    text-transform: uppercase;
+}
+
+
+a{
+
+   text-decoration: none;
+   font-size: 19px;
+   border:2px solid blue; 
+   color:red;
+}
+
+a:hover, a focus{
+
+    color:blueviolet;
+    cursor:pointer;
+    background-color:goldenrod;
+}
+
+main{
+
+    
+    width:50%;
+}
+
+p{
+    background-color: lightgray;
+    margin:100px 50px;
+}
+
+ol{
+
+color:red;
+font-size: 21px;
+list-style-type:none;
+margin:0;
+background-color: black;
+
+}
+
+ol ::marker{
+
+    content:"3$";
+}
+
+li{
+
+    display:inline-block;
+}
+
+.pointer{
+
+    margin-top:100px;
+    display:inline-block;
+background-color:yellowgreen;
+padding: 4rem;
+height:200px;
+
+
+}

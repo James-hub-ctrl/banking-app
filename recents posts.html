@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body{
+    font-family: 'ubuntu','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+/*typography*/
+
+.container-flex{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+
+
+h1,h2,h3{
+    font-family: 'lora', serif;
+    font-weight: 400;
+    margin-top: 0;
+   
+}
+
+h1{
+    color:#143774;
+    font-size: 2rem;
+    margin:0;
+}
+.subtitle{
+    font-weight: 700;
+     color:#1792d2;
+     font-size: .75rem;
+     margin:0;
+}
+
+
+header{
+    background:rgb(232, 239, 243);
+    padding: 2em 0;
+    text-align: center;
+    margin-bottom: 3em;
+ }
+ 
+ @media (min-width:675px) {
+    .container-flex{
+        flex-direction: row;
+    }
+    main{
+        width: 70%;
+    }
+    aside{
+        width:25%;
+        min-width: 200px;
+        margin-left: 2em;
+    }
+ }
+
+ footer{
+    background-color: darkblue;
+    color:white;
+    text-align: center;
+    padding: 2em 0;
+ }
+
+
+nav ul{
+
+list-style: none;
+display:flex;
+justify-content: center;
+padding: 0;
+}
+
+nav li{
+margin-left:2em;
+
+}
+nav a:hover,nav a:focus{
+    color:#1792d2;
+}
+.container{
+    width:90%;
+    max-width: 900px;
+    margin:0 auto;
+   }
+
+
+nav a{
+
+text-decoration: none;
+color:black;
+font-weight: 700;
+padding: .25em 0;
+}
+
+.current:hover{
+    color:black;
+}
+@media (max-width:675px) {
+    nav ul{
+        flex-direction: column;
+    }
+    nav li {
+        margin:.5em 0;
+    }
+}
+.widget-title{
+    font-size: 1rem;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 700;
+}
+.widget-title,
+.widget-recent-post-title{
+    font-size: 1rem;
+}
+
+
+/* h1 subtitle*/
+.article-title{
+    font-family:'lora', serif; 
+    font-size:1.5rem;
+}
+.article-read-more,
+    .article-info{
+    font-size:.875rem;
+}
+.article-read-more{
+    color:#1792d2;
+    text-decoration: none;
+    font-weight: 700;
+}
+.article-read-more:hover,
+.article-read-more:focus{
+    color:#143774;
+    text-decoration: underline;
+}
+.article-info{
+    margin:2em  0;
+}
+/* typography*/
+a{
+    color:#1792d2;
+    font-weight: bold;
+}
+
+a:hover,a:focus{
+    color:#143774;
+}
+
+strong{
+    font-weight: 700;
+}
+/*article*/
+.article-featured{
+
+    border-bottom: #707070 1px solid ;
+    padding-bottom: 1em;
+    margin-bottom:2em;
+}
+.image-full{
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
+.article-recent{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.article-recent-main{
+
+    order:2;
+}
+
+.article-recent-secondary{
+ 
+    order: 1;
+
+}
+
+.article-image{
+    width:100%;
+    min-height:300px;
+    object-fit: cover;
+}
+@media (min-width:675px) {
+ .article-recent{
+    flex-direction:row;
+    justify-content: space-between;
+ }
+ .article-recent-main{
+    width: 70%;
+ }
+ .article-recent-secondary{
+    width: 25%;
+ }
+ .article-featured{
+    display:flex;
+    flex-direction: column;
+ }
+ .article-image{
+    order:-2;
+ }
+ .article-info{
+    order:-1;
+ }
+}
+/*widget*/
+.sidebar-widget{
+    border: 18px solid #efefef;
+    margin-bottom:2em;
+    padding: 1em;
+}
+.widget-recent-post{
+
+    display:flex;
+    flex-direction: column;
+    border-bottom:2px solid darkgrey;
+    margin-bottom: 2em;
+}
+.widget-recent-post:last-child{
+    border:0;
+    margin:0;
+}
+.widget-image{
+    order: -1;
+}
+
+
+     
+    </style>
+</head>
+<body>
+
+        <header>        
+            <div class="container container-nav"> 
+                <div class="con">
+            <h1>Living the social life</h1>
+            <p class="subtitle">a blog  exploring  the minimalism in life</p>
+        </div>
+
+        <nav>
+            <ul> 
+            <li><a href="yam.html" class="current">Home</a></li>  
+            <li><a href="port.html">About me </a></li>
+            <li> <a href="organization.html">Recent post</a></li>
+            </ul>
+            </nav>
+    </div>
+    </header>
+    
+<div class="container  container-flex">
+    <main role="main">
+        
+         <article  class="article-featured">
+        <h2 class="title1">i am not social person </h2>
+        <img src="james.jpg" height="10%" width="59%"      alt="simple white desk on a white wall with a plant on the far right side"
+         class="image-full">
+         <p class="article-info">july 23 2019 | 3 comments<p>
+          <p class="article-body"><strong> life can be completed quickly,</strong> but it doesn't have to be! there are many ways 
+            to simplify your life,<a href="#"> a few of which we have explored in the past.</a> this week  we're taking a bit of 
+            of an approach
+          </p>
+          <a href="na.html" class="article-read-more"> CONTINUE READING</a>
+         </article>
+
+
+
+         
+
+
+
+          </main>
+    
+    <aside class="sidebar">
+        <div class="sidebar-widget">
+            <h2 class="widget-title">ABOUT ME</h2>
+            <img src="back5.jpeg" alt="" class="widget-image">
+            <p class="widget-boy"> i find life happier, when things are nice an simple</p>
+        </div>
+
+        <div class="sidebar-widget">
+            <h2 class="widget-title">RECENTS POSTS</h2>
+            <div class="widget-recent-post">
+                <h3 class="widget-recent-post-title">keeping cooking simple</h3>
+                   <img src="back5.jpeg" alt="" class="widget-image">     
+            </div>
+
+            <div class="widget-title">
+            <h2 class="widget-title">simplicity an work</h2>
+            <div class="widget-recent-post">
+                <h3 class="widget-recent-post-title"> when things are nice an simple</h3>
+                   <img src="back5.jpeg" alt="" class="widget-image">     
+            </div>
+
+            </div> 
+    </aside>
+</div>
+
+    
+
+       <footer>
+        <p><strong>living the simple life</strong></p>
+        <p>copyright 2019</p>
+       </footer> 
+</body>
+</html>
