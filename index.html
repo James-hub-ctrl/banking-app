@@ -4,100 +4,321 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
+<style>
 
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
-        
-        .content{
-        margin-top: 150px;
-        height:921px
-        }
-        .header-nav{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background-color: #333;
-color:white;
-padding: 1em;
-text-align: center;
-z-index:1;
-        }
+    body{
+    font-family:'poppins';
+    margin:0;
+    padding: 0;
+    margin-top: 100px;
+    height:921px;
+    background:#04061c;
+    margin-left: 3.5em;
+}
+.page{
+    float:right;
+    margin-right: 7em;
+    border-radius:400px;
+    width:200px;
+    height:200px;
+    border: 6px solid white;
+    outline:5px solid skyblue;
+    box-shadow: 0 0 50px skyblue, 0 0 40px skyblue, 0 0 50px rgba(19, 155, 209, 0.815);
+}
+header{
+    top:0;
+    margin:0;
+    position:fixed;
+    left:0;
+    z-index: 1;
+    width: 100%;
+}
+.btn{
+    width: 160px;
+    height:32px;
+    text-align: center;
+}
+h1 {
+    font-size: 1.9em;
+    font-weight: bolder;
+    margin-top: 200px;
+    color:white;
+    text-shadow: 0px 0px 5px yellowgreen, 0px -5px 5px crimson; 
+   }
+button{
+width: 300px;
+height:34px;
+border-radius: 50px;
+background-color: rgba(48, 177, 228, 0.991) ;
+text-align: left;
 
-        .header-nav.header{
-            background-color: #444;
-            padding: 0.5em;
-        }
-        .header-nav.navbar{
+}
+button:hover{
+    
+    box-shadow: 0 0 10px skyblue, 0 0 30px skyblue, 0 0 40px rgba(19, 155, 209, 0.815);
 
-            background-color: #333;
-            padding: 0.5em;
+}
+.mage{
+    text-align: center;
+   }
 
-        }
-        .header-nav ul{
-            list-style: none;
-            margin:0;
-            padding: 0;
-        }
-        .header-nav a{
-            color:white;
-            text-decoration: none;
-        }
-        ul{
-            background-color: white;
-        }
-        
 
-        
-      </style>
+h3{
+    color:white;
+}
+p{
+    color:white;
+}
+.red{
+    
+    margin-right: 145px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color:black;
+    color:white;
+    padding:0.1em;
+}
+.logo a{
+    text-decoration: none;
+    color:white;
+}
+
+.nav-links ul{
+    display:flex;
+    text-decoration: none;
+    color:white;
+    gap:7rem;
+    list-style-type: none;
+    justify-content: space-evenly;
+    place-items: center;
+    align-items: center;
+    margin-right: 2em;
+    margin-top: 1.4em;
+}
+.not{
+    text-align:right;
+    margin-right: 70px;
+    display:block;
+}
+.pager{
+    float:left;
+    margin-right: 7em;
+    border-radius:400px;
+    width:200px;
+    height:200px;
+    border: 6px solid white;
+    outline:5px solid skyblue;
+    box-shadow: 0 0 50px skyblue, 0 0 40px skyblue, 0 0 50px rgba(19, 155, 209, 0.815);
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color:white;
+}
+
+
+/*||PROFILE CARD*/
+
+
+.con{
+    display:flex;
+    gap:4.5rem;
+    margin-left: 100px;
+    
+}
+.container1{
+    width:280px;
+    height:450px;
+    background-color:darkblue;
+    border: 2px solid blue;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.container2{
+    width:280px;
+    height:450px;
+    background-color:darkblue;
+    border: 2px solid blue;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.container3{
+    width:280px;
+    height:450px;
+    background-color:darkblue;
+    border: 2px solid blue;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.note{
+    width:249px;
+    height:382px;
+   
+}
+.green{
+    text-align: center;
+}
+
+
+
+
+@media screen and (min-width:190px) {
+
+
+ 
+}
+
+@media screen and (min-width:490px) {
+    
+
+ 
+}
+
+    
+
+.blue{
+
+    margin-top: 100px;
+    text-align: center;
+}
+
+.ima{
+
+scroll-margin-top:8rem;
+width: min(100%, 350px);
+background-color: antiquewhite;
+border-radius:15px;
+padding:1rem;
+display:flex;
+flex-direction:column;
+align-items: center;
+margin: auto 1em;
+gap:    1em;
+
+}
+
+.ima{
+
+display:flex;
+;
+}
+/*|| profile card*/
+
+
+</style>
 </head>
 <body>
-
-    <header class="header-nav">
-        <div class="header">
-        <h1>my shop</h1>
-        <nav class="navbar">
-            <ul>
+    
+    <header>
+        <div class="nav">
+            <div class="logo">
+            <h2><a href="navbar.html">Portfolio</a></h2>
+            </div>
+    <div class="nav-links">
+       
+        
+        <ul>
             <li><a href="otop.html">Menu</a></li>
             <li><a href="port.html">HOURS</a></li>
             <li><a href="port2.html">Contact</a></li>
             <li><a href="oke3.html">About</a></li>
             </ul>
-            </nav>
-            </div>
-          
-    </header>
+        </div>
+        </div>
+        </header>
 
-    <main class="content">
-        <p>
-        the webpage of colors is the background color of the width is going to become very large because of the sky of 
-            the beating of a very life time is there because of there being no problem
-            
-            the webpage of colors is the background color of the width is going to become very large because of the sky of 
-            the beating of a very life time is there because of there being no problem
-            <p>the webpage of colors is the background color of the width is going to become very large because of the sky of 
-            the beating of a very life time is there because of there being no problem
-            </p>
-            <p>the webpage of colors is the background color of the width is going to become very large because of the sky of 
-            the beating of a very life time is there because of there being no problem
-            </p>
-            the webpage of colors is the background color of the width is going to become very large because of the sky of 
-            the beating of a very life time is there because of there being no problem
-            
-            the webpage of colors is the background color of the width is going to become very large because of the sky of 
-            the beating of a very life time is there because of there being no problem
-            <p>the webpage of colors is the background color of the width is going to become very large because of the sky of 
-            the beating of a very life time is there because of there being no problem
-            </p>
-            <p>the webpage of colors is the background color of the width is going to become very large because of the sky of 
-            the beating of a very life time is there because of there being no problem
-            </p>
-            </main>
-            </body>
-    
+        <main>
+
+            <h1>
+                Welcome to my website i am just building <br>
+                in my first tutorial on html an css in </h1>
+                <img src="james.jpg" width="195px" height="298px" class="page">
+               <h3>this website we give you a supplementary hint<br>
+                 on what i have touched so far in html an css so follow along with me</h3>
+                <p> i am a computer science student</p>
+
+<button class="dore">More About Me</button>
+
+
+
+  <h1 class="mage">ABOUT ME</h1>
+  <p class="not">
+    i am a computer scientist studying programming
+and i will designing a website the thing i am first <br>
+<img src="james.jpg" class="pager">
+designing first should be my profile webpage
+an that will be my very first step into designing<br>
+my very first webpage and then i will be doing a trial and error method to get a good paying job<br>
+after i will design my animation css or an e-commerce website an i am going on a
+ lot if courses <br>
+ after this an then i will be studying javascript 
+ and react an java and i will be
+ in essential<br> to be a programmer
+ and
+  i will be a web developer and then i can be a  games 
+  developer<br> or designer in my
+ career an then i will develop my mobile app applications on software development<br>
+</p>
+<button class="red">more about me</button>  
+    </div> 
+
+<h1 class="blue">
+    ABOUT MY SERVICES
+</h1>
+
+<div class="con">
+<div class="container1">
+
+    <h2 class="green">Ui/Ux</h2>
+    <button class="btn">contact me</button>
+
+</div>
+
+<div class="container2">
+<h2 class="green">Web Designing</h2>
+<button class="btn">contact me</button>
+
+</div>
+
+<div class="container3">
+<h2 class="green">Web Development</h2>
+<button class="btn">contact me</button>
+
+</div>
+</div>  
+        </main>
+        <h1>the body</h1>
+
+
+        my projects include
+        
+
+        <nav>
+            <ul>
+               
+                <li class="ima"><a href="calculator2.html">calculator1.html</a><li>
+                <li class="ima"><a href="chrome_extension.html">chrome_extension.html</a></li>
+                <li class="ima"><a href="floating.html">floating.html</a></li>
+                <li class="ima"><a href="jav.html">jav.html</a></li>
+                <li class="ima"><a href="javascipt2.html">javascipt2.html</a></li>
+                <li class="ima"><a href="to_do_list.html">to_do_list.html</li>
+                <li class="ima"><a href="yam.html">yam.html</a></li>
+                <li class="ima"><a href="blackjack.html">blackjack.html</a></li>
+                <li class="ima"><a href="border&outline.html">border&outline.html</a></li>
+                <li class="ima"><a href="navbar3.html">navbar3.html</a></li>
+                
+                <li class="ima"><a href="sun.html">sun.html</a></li>
+            </ul>
+        </nav>
 </body>
 </html>
